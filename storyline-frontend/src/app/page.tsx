@@ -1,4 +1,13 @@
-export default function Page() 
+import { FC } from 'react';
+import RichEditor from '../components/richTextEditor';
+
+interface Props {}
+
+const Home: FC<Props> = () => 
 {
-  return <h1>Hello, Next.js!</h1>
+  return <div>
+    <RichEditor/>
+  </div>
 }
+
+export default Home;
